@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition
+	    xmlns="http://www.w3.org/1999/xhtml"
+		xmlns:h="http://java.sun.com/jsf/html"
+		xmlns:f="http://java.sun.com/jsf/core"
+		xmlns:p="http://primefaces.org/ui"
+		xmlns:ui="http://java.sun.com/jsf/facelets"
+>
+
+	<style>
+		
+		.div .buttons{
+			font-size:82%;
+			border:none;
+			cursor:pointer;
+			padding:2px;
+			font-weight: bolder;
+			margin-top: 10px; 
+		}
+		
+		
+		
+		.divImg{
+			text-align: center;
+			margin-top: 30px;
+		}
+		
+		.divImg .img:hover{
+			border: solid 1px red;
+		}
+		
+	
+	</style>
+	
+	<div class="div">
+		<h:column >
+	        <a  href="https://pt.wikipedia.org/wiki/Os_Simpsons"><h:commandButton value="Os Simpsons"  styleClass="buttons" /></a>
+	    </h:column>
+	    <h:column>
+	        <a href="https://www.starplus.com/pt-br/home"><h:commandButton value="StarPlus"  styleClass="buttons" /></a>
+	    </h:column>
+	    <h:column>
+	        <a href="https://www.youtube.com/@ossimpsons-oficial5677"><h:commandButton value="YouTube"  styleClass="buttons" /></a>
+	    </h:column>
+	    <h:column>
+	        <a href="https://pt.wikipedia.org/wiki/Homer_Simpson"><h:commandButton value="Biografia" styleClass="buttons" /></a>
+	    </h:column>
+    </div>
+    
+    <hr/>
+    
+    <div class="divImg">
+    		<h5>biografias:</h5>
+		   <a href="https://pt.wikipedia.org/wiki/Bart_Simpson"><p:graphicImage url="/img/Bart.png" styleClass="img" width="75px"/></a>
+		   <a href="https://pt.wikipedia.org/wiki/Lisa_Simpson"><p:graphicImage url="/img/lisa.png" styleClass="img" width="75px"/></a>
+		   <a href="https://pt.wikipedia.org/wiki/Marge_Simpson"><p:graphicImage url="/img/marge.png" styleClass="img" width="55px"/></a>
+		   <a href="https://simpsons.fandom.com/pt/wiki/Maggie_Simpson"><p:graphicImage url="/img/meg.png" styleClass="img" width="75px"/></a>
+    </div>
+    
+    
+</ui:composition>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

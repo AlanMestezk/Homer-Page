@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition
+	    xmlns="http://www.w3.org/1999/xhtml"
+		xmlns:h="http://java.sun.com/jsf/html"
+		xmlns:f="http://java.sun.com/jsf/core"
+		xmlns:p="http://primefaces.org/ui"
+		xmlns:ui="http://java.sun.com/jsf/facelets"
+>
+
+	
+	<style>
+	
+		.divPai{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			font-size: 14px;
+		}
+		
+		.divButtom .buttonsU{
+			background-color: white;
+			border: none;
+		}
+		
+		.divButtom .buttonsU:hover{
+			border: 2px solid blue;
+			background-color: aliceblue;
+		}
+		
+		.divPai .imgHomer:hover{
+			width: 80px;
+			height: 80px;
+		}
+		
+	</style>
+	
+	
+	<div class="divPai">
+	
+		
+			<p:graphicImage url="/img/homer-simpson.png" width="50px" height="50px" styleClass="imgHomer"/>  
+		    <h1>Homer Page</h1>
+	 
+	    
+	    <div class="divButtom">
+	 
+			<a href="http://localhost:8080/WebHomer/jsp-archives/cadastro.jsp"><p:button  value="Login"  styleClass="buttonsU"/></a>
+			<a href="https://pt.wikipedia.org/wiki/Matt_Groening"><p:button  value="Sobre"  styleClass="buttonsU"/></a>
+			
+		 </div>	
+	</div>
+
+</ui:composition>

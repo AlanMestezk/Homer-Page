@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+		xmlns:h="http://java.sun.com/jsf/html"
+		xmlns:f="http://java.sun.com/jsf/core"
+		xmlns:p="http://primefaces.org/ui"
+		xmlns:ui="http://java.sun.com/jsf/facelets"
+		>
+<h:head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<link rel="shortcut icon" href="https://img.icons8.com/plasticine/256/homer-simpson.png"/>
+<title>Homer Page</title>
+</h:head>
+<h:body>
+	
+	<style>
+	
+		body{
+			position: relative;
+		    height: 99%;
+		    width: 99%;
+		    background: url("https://media.tenor.com/DlnYiZLnSU8AAAAM/the-simpsons-simpson.gif");
+		    background-size: cover;
+
+		}
+		
+		.layout{
+			margin-top: 85px;
+			width: 100%;
+			height: 800px;
+		}
+		
+	</style>
+
+	
+	<p:layout style="min-width:400px;min-height:200px;" styleClass="layout">
+	
+	    <p:layoutUnit position="north" size="60" minSize="90" maxSize="90" styleClass="layout-layout-conteiners">
+			<ui:insert name="superior" />
+	    </p:layoutUnit>
+	 
+	    <p:layoutUnit position="west"  size="140" styleClass="esquerda">
+	        <ui:insert name="esquerda"/>
+	    </p:layoutUnit>
+	    
+	     <p:layoutUnit position="center" size="140" maxSize="150" minSize="100" styleClass="layout-layout-conteiners">
+	        <ui:insert name="centro"/>
+	    </p:layoutUnit>
+	    
+	    <p:layoutUnit position="east" size="170" styleClass="layout-conteiners">
+	        <ui:insert name="direita"/>
+	    </p:layoutUnit>
+	    
+	</p:layout>
+	
+</h:body>
+</html>

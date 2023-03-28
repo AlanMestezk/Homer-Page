@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition
+	    xmlns="http://www.w3.org/1999/xhtml"
+		xmlns:h="http://java.sun.com/jsf/html"
+		xmlns:f="http://java.sun.com/jsf/core"
+		xmlns:p="http://primefaces.org/ui"
+		xmlns:ui="http://java.sun.com/jsf/facelets"
+>
+
+	
+	<style>
+		
+		.buttons{
+			font-size:60%;
+			border:none;
+			cursor:pointer;
+			padding:2px;
+			font-weight: bolder;
+			margin-top: 5px; 
+			border: solid 1px black; 
+		}
+		
+		.buttons:hover{
+			font-size: 15px;
+			color: red;
+		}
+		
+		.divT .wiki{
+			width: 150px;
+			height: 50px;
+		}
+		
+		.divT .wiki:hover{
+			width: 155px;
+			
+		}
+		
+		.footer{
+			margin-top: 70px;
+		}
+	
+	</style>
+	
+	<div class="div">
+		<h:column >
+	        <a href="https://www.primefaces.org"><h:commandButton value="PrimeF"  styleClass="buttons" /></a>
+	    </h:column>
+	    <h:column>
+	        <a href="https://github.com/AlanMestezk"><h:commandButton value="GitHub" styleClass="buttons" /></a>
+	    </h:column>
+	    <h:column>
+	        <a href="https://www.linkedin.com/in/alan-souza-mestezk-9b86a2154/"><h:commandButton value="LinkedIn" styleClass="buttons" /></a>
+	    </h:column>
+    </div>
+    
+    <hr/>
+    
+    <div class="divT">
+    	<h4>Está curioso sobre outros personagens da serie?</h4>
+    	<h4>Abaixo esta o link para a comunidade de fãs da familia amarela:</h4>
+    	<a href="https://simpsons.fandom.com/pt/wiki/Página_principal"><p:graphicImage url="/img/wiki.png" width="50px" height="50px" styleClass="wiki"/></a>
+    </div>
+    <div class="footer">
+    	<h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy,</h6>
+    	<h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy,</h6>
+    	<h6>AlanMestezk 〚 〛 2016</h6>
+    </div>
+	
+</ui:composition>
